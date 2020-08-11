@@ -1,0 +1,27 @@
+1.
+import random
+a = random.randint(1,10)
+temp = input("猜数字:")
+guess = int(temp)
+while guess != a:
+    temp = input("笨！！继续猜：")
+    guess = int(temp)
+    if guess == a:
+        print("聪明！猜对了")
+    else:
+        if guess > a:
+            print("小一点")
+        else:
+            print("大一点")
+print("游戏结束")
+
+
+2.
+def generate(numRows):
+    r = [[1]]
+    for i in range(1,numRows):
+        r.append(list(map(lambda x,y:x+y, [0]+r[-1],r[-1]+[0])))
+    return r[:numRows]
+a=generate(10)
+for i in a:
+    print(i)
