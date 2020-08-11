@@ -4,7 +4,7 @@ a = random.randint(1,10)
 temp = input("猜数字:")
 guess = int(temp)
 while guess != a:
-    temp = input("笨！！！继续猜：")
+    temp = input("笨！继续猜：")
     guess = int(temp)
     if guess == a:
         print("聪明！猜对了")
