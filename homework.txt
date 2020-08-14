@@ -1,15 +1,15 @@
 1.
 import random
-a = random.randint(1,10)
+num = random.randint(1,10)
 temp = input("猜数字:")
 guess = int(temp)
-while guess != a:
+while guess != num:
     temp = input("笨！继续猜：")
     guess = int(temp)
-    if guess == a:
+    if guess == num:
         print("聪明！猜对了")
     else:
-        if guess > a:
+        if guess > num:
             print("小一点")
         else:
             print("大一点")
